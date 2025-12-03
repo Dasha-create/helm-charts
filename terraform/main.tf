@@ -18,3 +18,10 @@ terraform {
     prefix = "github.com/helm-charts"
   }
 }
+---
+terraform {
+  backend "gcs" {
+    bucket = "influxdata-devrel-operations"
+    prefix = "github.com/helm-charts"
+  }
+}
